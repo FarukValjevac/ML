@@ -1,0 +1,23 @@
+This is my public repository where I will provide codes which are important to understand ML basics. An EverNote link with explanations of terms, workflows, methods etc. can be accessed via the link provided below. 
+NOTE: This is a summary of the Machine Learning Crash Course provided by Google. 
+
+Evernote link:  https://www.evernote.com/shard/s422/sh/98f8e70a-0e02-77d1-09bf-578ff6efaecd/413bc35667e66303d5ccdda905ded4a2 
+
+REQUIRED: 
+I'm using PyCharm with Anaconda environment. 
+Install PycCharm and Anaconda Windows/Mac/Ubuntu:
+https://medium.com/@GalarnykMichael/setting-up-pycharm-with-anaconda-plus-installing-packages-windows-mac-db2b158bd8c
+
+REQUIRED:
+For building and deploying ML models TensorFlow is required.
+Install TensorFlow (OS independent): 
+https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/
+
+OPTIONAL:
+NumPy and Pandas can be installed directly from your IDE (usually) and a independent installation is not needed.
+Anyways if you want to install it independently, feel free to do so.
+Install NumPy (OS Independent):
+https://numpy.org/install/
+Install pandas (OS Independent):
+https://pandas.pydata.org/docs/getting_started/install.html
+
