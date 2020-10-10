@@ -1,5 +1,5 @@
 Code overview:
-1_Linear_Regression_With_Synthetic_Data.py 
+1_Linear_Regression_With_Synthetic_Data.py
 After doing this exercise, you'll know how to do the following:
 
 - Tune the following hyperparameters:
@@ -10,7 +10,6 @@ After doing this exercise, you'll know how to do the following:
 - Interpret different kinds of loss curves.
 
 2_Linear_Regression_With_A_Real_Dataset.py
-
 After doing this exercise, you'll know how to do the following:
 
 - Read a .csv file into a pandas DataFrame.
