@@ -1,6 +1,6 @@
-#@author Faruk Valjevac
+# @author Faruk Valjevac
 
-#@title Import relevant modules
+# @title Import relevant modules
 import pandas as pd
 import tensorflow as tf
 from matplotlib import pyplot as plt
@@ -62,49 +62,50 @@ def train_model(model, feature, label, epochs, batch_size):
 print("Defined create_model and train_model")
 
 
-#@title Define the plotting functions
+# @title Define the plotting functions
 def plot_the_model(trained_weight, trained_bias, feature, label):
-  """Plot the trained model against the training feature and label."""
+    """Plot the trained model against the training feature and label."""
 
-  # Label the axes.
-  plt.xlabel("feature")
-  plt.ylabel("label")
+    # Label the axes.
+    plt.xlabel("feature")
+    plt.ylabel("label")
 
-  # Plot the feature values vs. label values.
-  plt.scatter(feature, label)
+    # Plot the feature values vs. label values.
+    plt.scatter(feature, label)
 
-  # Create a red line representing the model. The red line starts
-  # at coordinates (x0, y0) and ends at coordinates (x1, y1).
-  x0 = 0
-  y0 = trained_bias
-  x1 = feature[-1]
-  y1 = trained_bias + (trained_weight * x1)
-  plt.plot([x0, x1], [y0, y1], c='r')
+    # Create a red line representing the model. The red line starts
+    # at coordinates (x0, y0) and ends at coordinates (x1, y1).
+    x0 = 0
+    y0 = trained_bias
+    x1 = feature[-1]
+    y1 = trained_bias + (trained_weight * x1)
+    plt.plot([x0, x1], [y0, y1], c='r')
 
-  # Render the scatter plot and the red line.
-  plt.show()
+    # Render the scatter plot and the red line.
+    plt.show()
+
 
 def plot_the_loss_curve(epochs, rmse):
-  """Plot the loss curve, which shows loss vs. epoch."""
+    """Plot the loss curve, which shows loss vs. epoch."""
 
-  plt.figure()
-  plt.xlabel("Epoch")
-  plt.ylabel("Root Mean Squared Error")
+    plt.figure()
+    plt.xlabel("Epoch")
+    plt.ylabel("Root Mean Squared Error")
 
-  plt.plot(epochs, rmse, label="Loss")
-  plt.legend()
-  plt.ylim([rmse.min()*0.97, rmse.max()])
-  plt.show()
+    plt.plot(epochs, rmse, label="Loss")
+    plt.legend()
+    plt.ylim([rmse.min() * 0.97, rmse.max()])
+    plt.show()
+
 
 print("Defined the plot_the_model and plot_the_loss_curve functions.")
 
-my_feature = ([1.0, 2.0,  3.0,  4.0,  5.0,  6.0,  7.0,  8.0,  9.0, 10.0, 11.0, 12.0])
-my_label = ([5.0, 8.8,  9.6, 14.2, 18.8, 19.5, 21.4, 26.8, 28.9, 32.0, 33.8, 38.2])
-
+my_feature = ([1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0])
+my_label = ([5.0, 8.8, 9.6, 14.2, 18.8, 19.5, 21.4, 26.8, 28.9, 32.0, 33.8, 38.2])
 
 learning_rate = 0.05  # 0.01 by default -> info if you change it for testing purposes.
-epochs = 125          # 10 by default   ->                  -||-
-my_batch_size = 12    # 12 by default   ->                  -||-
+epochs = 125  # 10 by default   ->                  -||-
+my_batch_size = 12  # 12 by default   ->                  -||-
 #  Ideal values to converge are for l_r = 0.14, e = 70 and m_b_s = 12 (speed/result ratio is ideal)
 
 # Discard any pre-existing version of the model.

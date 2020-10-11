@@ -1,18 +1,18 @@
 Code overview:
 1_Linear_Regression_With_Synthetic_Data.py
     After doing this exercise, you'll know how to do the following:
-        - Tune the following hyperparameters:
+        * Tune the following hyperparameters:
             - learning rate
             - number of epochs
             - batch size
-        - Interpret different kinds of loss curves.
+        * Interpret different kinds of loss curves.
 
 2_Linear_Regression_With_A_Real_Dataset.py
     After doing this exercise, you'll know how to do the following:
-        - Read a .csv file into a pandas DataFrame.
-        - Examine a dataset.
-        - Experiment with different features in building a model.
-        - Tune the following hyperparameters:
+        * Read a .csv file into a pandas DataFrame.
+        * Examine a dataset.
+        * Experiment with different features in building a model.
+        * Tune the following hyperparameters:
             - learning rate
             - number of epochs
             - batch size

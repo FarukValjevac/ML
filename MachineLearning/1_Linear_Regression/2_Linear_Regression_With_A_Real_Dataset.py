@@ -17,7 +17,7 @@ training_df = pd.read_csv(
     filepath_or_buffer="https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv")
 
 # Scale the label.
-training_df["median_house_value"] /= 1000.0  #  Scaling puts the value of each house in units of thousands.
+training_df["median_house_value"] /= 1000.0  # Scaling puts the value of each house in units of thousands.
 
 # Print the first rows of the pandas DataFrame.
 training_df.head()
@@ -134,8 +134,9 @@ def predict_house_values(n, feature, label):
                                       training_df[label][10000 + i],
                                       predicted_values[i][0]))
 
+
 # Task 1
-#----------m_f = "total_rooms" or "population" are not useful/acurate features. Example:
+# ----------m_f = "total_rooms" or "population" are not useful/acurate features. Example:
 
 # Specify the feature and the label. This model relies on only one feature
 my_feature = "total_rooms"  # the total number of rooms on a specific city block.
@@ -154,7 +155,8 @@ my_model = None
 
 # Invoke the functions.
 my_model = build_model(learning_rate)
-learned_weight, learned_bias, epochs, rmse = train_model(my_model, training_df, my_feature, my_label, epochs, batch_size)
+learned_weight, learned_bias, epochs, rmse = train_model(my_model, training_df, my_feature, my_label, epochs,
+                                                         batch_size)
 
 print("\nThe learned weight for your model is %.4f" % learned_weight)
 print("The learned bias for your model is %.4f\n" % learned_bias)
@@ -164,10 +166,10 @@ plot_the_model(learned_weight, learned_bias, my_feature, my_label)
 plot_the_loss_curve(epochs, rmse)
 
 # Predict the house values based on a feature
-#predict_house_values(10, my_feature, my_label)
+# predict_house_values(10, my_feature, my_label)
 
 # Task 2
-#----------Define a synthetic feature (Ratio of total_rooms to population) for more accurate predictions. Example:
+# ----------Define a synthetic feature (Ratio of total_rooms to population) for more accurate predictions. Example:
 
 # Define a synthetic feature
 training_df["rooms_per_person"] = training_df["total_rooms"] / training_df["population"]
