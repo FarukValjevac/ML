@@ -184,5 +184,3 @@ y_test = test_df[my_label]
 # The test set can serve as an impartial judge because its examples haven't been used in training the model.
 # Run the following code cell to evaluate the model with the test set:
 results = my_model.evaluate(x_test, y_test, batch_size=batch_size)
-
-
