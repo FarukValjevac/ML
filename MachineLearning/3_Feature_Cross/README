@@ -1,0 +1,8 @@
+Core overview:
+1_Feature_Cross.py
+    After doing this exercise, you'll know how to do the following:
+      * Experiment with different ways to represent features.
+      * Use tf.feature_column methods to represent features in different ways.
+      * Represent features as bins.
+      * Cross bins to create a feature cross.
+	
