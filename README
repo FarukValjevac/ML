@@ -2,6 +2,7 @@ This is my public repository where I will provide (commented) codes which are im
 NOTE: This is a summary of the Machine Learning Crash Course provided by Google. My intention is to take the most important things from the course for easy understanding without the unnecessary talk-around and without working with Google Colab.
 
 Evernote link Part 1:  https://www.evernote.com/shard/s422/sh/98f8e70a-0e02-77d1-09bf-578ff6efaecd/413bc35667e66303d5ccdda905ded4a2
+Evernote link Part 2:  https://www.evernote.com/shard/s422/sh/4684bd49-7b67-3cc8-3c84-d5cb78faa7c9/8928ef08075b5be3a364783415c14288
 
 REQUIRED: 
 I'm using PyCharm IDE with Anaconda environment. 
