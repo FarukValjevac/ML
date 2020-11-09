@@ -1,7 +1,7 @@
 This is my public repository where I will provide (commented) codes which are important to understand ML basics. An EverNote with explanations of terms, workflows, methods etc. aswell as the instruction how to setup your environment can be accessed via the links provided below. Invest the time, it is worth it! :)  
 NOTE: This is a summary of the Machine Learning Crash Course provided by Google. My intention is to take the most important things from the course for easy understanding without the unnecessary talk-around and without working with Google Colab.
 
-Evernote link Part 1:  https://www.evernote.com/shard/s422/sh/98f8e70a-0e02-77d1-09bf-578ff6efaecd/413bc35667e66303d5ccdda905ded4a2 
+Evernote link Part 1:  https://www.evernote.com/shard/s422/sh/98f8e70a-0e02-77d1-09bf-578ff6efaecd/413bc35667e66303d5ccdda905ded4a2
 
 REQUIRED: 
 I'm using PyCharm IDE with Anaconda environment. 
