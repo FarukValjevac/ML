@@ -1,3 +1,5 @@
+# @author Faruk Valjevac
+
 #@title Import modules
 import numpy as np
 import pandas as pd
@@ -50,7 +52,7 @@ def train_model(model, df, feature, label, my_epochs,
                         validation_split=my_validation_split)
 
     # The list of epochs is stored separately from the
-    # rest of history.
+    # rest of history
     epochs = history.epoch
 
     # Isolate the root mean squared error for each epoch.
